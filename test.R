@@ -1,6 +1,6 @@
 runif(1)
 
-# ```{r packages, echo=FALSE}
+# packages
 library(tidyverse)
 library(lme4)
 library(ggbeeswarm)
@@ -8,12 +8,12 @@ library(broom.mixed)
 library(lattice)
 # ```
 
-# ```{r sleepstudy}
+# sleepstudy
 data("sleepstudy", package = "lme4")
 sleepstudy
 # ```
 
-# ```{r modify data and plot}
+# modify data and plot
 corrected_sleepstudy <- sleepstudy |> 
   filter(Days > 1)
 
