@@ -8,12 +8,11 @@ library(lme4)
 library(ggbeeswarm)
 library(broom.mixed)
 library(lattice)
-# ```
 
 # sleepstudy
 data("sleepstudy", package = "lme4")
 sleepstudy
-# ```
+
 
 # modify data and plot
 corrected_sleepstudy <- sleepstudy |> 
@@ -26,4 +25,3 @@ reaction_plot <- ggplot(corrected_sleepstudy, aes(Days, Reaction, group = Days, 
   labs(y = "Reaction time (ms)", x = "Days of sleep deprivation")
 
 reaction_plot
-# ```
