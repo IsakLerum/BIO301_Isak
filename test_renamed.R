@@ -1,3 +1,5 @@
+# This is an experimental file to learn the intricacies of using GitHub
+
 runif(1)
 
 # packages
